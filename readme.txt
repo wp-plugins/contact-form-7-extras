@@ -39,6 +39,11 @@ None, yet.
 
 == Changelog ==
 
+= 0.1.5 =
+
+- Bugfix: display the correct number of entries submitted for each contact form.
+- Update translation POT file.
+
 = 0.1.4 =
 
 - Check if `_gaq` Google Analytics global exists before adding an event.

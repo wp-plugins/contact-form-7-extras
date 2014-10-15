@@ -6,7 +6,7 @@
 	Plugin URI: https://github.com/kasparsd/contact-form-7-extras
 	Author: Kaspars Dambis
 	Author URI: http://kaspars.net
-	Version: 0.1.4
+	Version: 0.1.5
 	Tested up to: 4.0
 	License: GPL2
 	Text Domain: cf7-extras
@@ -198,7 +198,8 @@ class cf7_extras {
 			$form_entries = get_posts( array(
 					'fields' => 'ids',
 					'post_type' => 'cf7_entry',
-					'post_parent' => $post_id
+					'post_parent' => $post_id,
+					'posts_per_page' => -1
 				) );
 
 			$fields['extra-cf7-storage'] = array(
